@@ -127,7 +127,7 @@ async function getAreas() {
     mealsContainer.innerHTML += `
       <div class="col-6 col-md-4 col-lg-3">
         <div onclick="getMealsByArea('${area.strArea}')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
-        <img src="../Exam2/images /area.jpg" alt="${area.strArea}" class="img-fluid w-100 rounded"/>
+        <img src="../Exam-2/images /area.jpg" alt="${area.strArea}" class="img-fluid w-100 rounded"/>
           <div class="meal-layer position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-black bg-white bg-opacity-75">
             <h3 class="text-center m-0">${area.strArea}</h3>
           </div>
@@ -156,7 +156,7 @@ async function getIngredients() {
     mealsContainer.innerHTML += `
       <div class="col-6 col-md-4 col-lg-3">
         <div onclick="getMealsByIngredient('${ingredient.strIngredient}')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
-        <img src="../Exam2/images /ingredients.jpg" alt="${ingredient.strIngredient}" class="img-fluid w-100 rounded"/>
+        <img src="../Exam-2/images /ingredients.jpg" alt="${ingredient.strIngredient}" class="img-fluid w-100 rounded"/>
           <div class="meal-layer position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-black bg-white bg-opacity-75">
             <h3 class="text-center m-0">${ingredient.strIngredient}</h3>
           </div>
