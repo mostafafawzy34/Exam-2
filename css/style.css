@@ -1,0 +1,55 @@
+body {
+  background-color: #000;
+  color: #000;
+}
+#mainContent,
+#mealsContainer,
+#mealsContainer .col,
+#mealsContainer .row {
+  background-color: #000;
+}
+#mainContent {
+  padding: 1px !important; /* or even 0 */
+}
+
+#sideNav {
+  width: 250px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1050;
+}
+
+#sideNav.open {
+  transform: translateX(0);
+}
+
+
+#sideNav ul li {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#sideNav.open ul li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+img:hover {
+  transition: 0.4s;
+}
+
+.meal {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.meal-layer {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.meal:hover .meal-layer {
+  opacity: 1;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookmarker</title>
+  <link rel="stylesheet" href="../Exam2/css/style.css">
+  <link href="../Exam2/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+
+  <div id="sideNav" class="bg-black position-fixed top-0 start-0 h-100 d-flex flex-column" style="width: 250px; z-index: 1050;">
+
+
+  <ul class="list-unstyled p-4">
+  <li class="mb-3"><a href="#" class="text-white text-decoration-none" onclick="showSearch()">Search</a></li>
+  <li class="mb-3"><a href="#" class="text-white text-decoration-none" onclick="getCategories()">Categories</a></li>
+  <li class="mb-3"><a href="#" class="text-white text-decoration-none" onclick="getAreas()">Area</a></li>
+  <li class="mb-3"><a href="#" class="text-white text-decoration-none" onclick="getIngredients()">Ingredients</a></li>
+  <li class="mb-3"><a href="#" class="text-white text-decoration-none" onclick="showContactForm()">Contact Us</a></li>
+</ul>
+
+
+
+<div class="mt-auto p-4 text-white ">
+    <div class="mb-3">
+      <i class="fa-brands fa-facebook me-2"></i>
+      <i class="fa-brands fa-twitter me-2"></i>
+      <i class="fa-solid fa-globe"></i>
+    </div>
+    <small>Copyright © 2019 All Rights Reserved.</small>
+  </div>
+
+
+  <button class="btn btn-danger position-absolute top-0 end-0 m-3 z-3" onclick="toggleNav()">
+    <i class="fas fa-times"></i>
+  </button>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-auto bg-white d-flex flex-column p-3" style="height: 100vh; width: 70px; position: fixed; top: 0;">
+      <div class="text-center">
+        <img src="../Exam2/images /logo.png" style="width: 40px; height: auto;" alt="Logo">
+   
+
+
+      </div>
+      <div class="flex-grow-1 d-flex justify-content-center align-items-center">
+        <button class="btn w-100 d-flex justify-content-center align-items-center" onclick="toggleNav()">
+          <i class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+        </button>
+      </div>
+      <div class="mt-auto text-center">
+        <i class="fa-solid fa-globe d-block mb-3"></i>
+        <i class="fa-solid fa-share-nodes d-block"></i>
+      </div>
+    </div>
+
+
+    <div class="col p-5" id="mainContent" style="margin-left: 80px;">
+      <div class="row g-3" id="mealsContainer">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="../Exam2/js/main.js"></script>
+  <script src="../Exam2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
